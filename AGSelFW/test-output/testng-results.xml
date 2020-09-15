@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
     <line>
       <![CDATA[Settingup Excel, Properties & Reporter...]]>
@@ -32,12 +32,12 @@
       <![CDATA[Broser quitted - completed]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="37898" started-at="2020-09-15T00:23:29Z" finished-at="2020-09-15T00:24:07Z">
+  <suite name="Default suite" duration-ms="19259" started-at="2020-09-15T02:26:36Z" finished-at="2020-09-15T02:26:55Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="37898" started-at="2020-09-15T00:23:29Z" finished-at="2020-09-15T00:24:07Z">
+    <test name="Default test" duration-ms="19259" started-at="2020-09-15T02:26:36Z" finished-at="2020-09-15T02:26:55Z">
       <class name="com.ag.testcases.homePageLogin">
-        <test-method status="PASS" signature="setUpSuite()[pri:0, instance:com.ag.testcases.homePageLogin@4678c730]" name="setUpSuite" is-config="true" duration-ms="752" started-at="2020-09-14T20:23:29Z" finished-at="2020-09-14T20:23:29Z">
+        <test-method status="PASS" signature="setUpSuite()[pri:0, instance:com.ag.testcases.homePageLogin@4678c730]" name="setUpSuite" is-config="true" duration-ms="725" started-at="2020-09-14T22:26:35Z" finished-at="2020-09-14T22:26:36Z">
           <reporter-output>
             <line>
               <![CDATA[Settingup Excel, Properties & Reporter...]]>
@@ -47,7 +47,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- setUpSuite -->
-        <test-method status="PASS" signature="before()[pri:0, instance:com.ag.testcases.homePageLogin@4678c730]" name="before" is-config="true" duration-ms="4836" started-at="2020-09-14T20:23:29Z" finished-at="2020-09-14T20:23:34Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:com.ag.testcases.homePageLogin@4678c730]" name="before" is-config="true" duration-ms="5892" started-at="2020-09-14T22:26:36Z" finished-at="2020-09-14T22:26:42Z">
           <reporter-output>
             <line>
               <![CDATA[Brining up desired browser with desired launch url...]]>
@@ -57,11 +57,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="loginApp()[pri:1, instance:com.ag.testcases.homePageLogin@4678c730]" name="loginApp" duration-ms="5718" started-at="2020-09-14T20:23:34Z" finished-at="2020-09-14T20:23:40Z">
+        <test-method status="PASS" signature="loginApp()[pri:1, instance:com.ag.testcases.homePageLogin@4678c730]" name="loginApp" duration-ms="5829" started-at="2020-09-14T22:26:42Z" finished-at="2020-09-14T22:26:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginApp -->
-        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.ag.testcases.homePageLogin@4678c730]" name="tearDownMethod" is-config="true" duration-ms="1048" started-at="2020-09-14T20:23:40Z" finished-at="2020-09-14T20:23:41Z">
+        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.ag.testcases.homePageLogin@4678c730]" name="tearDownMethod" is-config="true" duration-ms="1121" started-at="2020-09-14T22:26:48Z" finished-at="2020-09-14T22:26:49Z">
           <params>
             <param index="0">
               <value>
@@ -78,84 +78,15 @@
             </line>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method status="FAIL" signature="validateMyFavsCount()[pri:2, instance:com.ag.testcases.homePageLogin@4678c730]" name="validateMyFavsCount" duration-ms="25052" started-at="2020-09-14T20:23:41Z" finished-at="2020-09-14T20:24:06Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[@data-tid='my-places']"}
-  (Session info: chrome=85.0.4183.102)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'it-mbp-krudrangi.local', ip: '2601:c6:c880:180:a89a:9921:aa82:44a5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '1.8.0_251'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: /var/folders/pz/w9c4bwk91nx...}, goog:chromeOptions: {debuggerAddress: localhost:60489}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 64581ec02e106abe4005fcdd0f81be57
-*** Element info: {Using=xpath, value=//button[@data-tid='my-places']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@data-tid='my-places']"}
-  (Session info: chrome=85.0.4183.102)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'it-mbp-krudrangi.local', ip: '2601:c6:c880:180:a89a:9921:aa82:44a5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '1.8.0_251'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: /var/folders/pz/w9c4bwk91nx...}, goog:chromeOptions: {debuggerAddress: localhost:60489}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 64581ec02e106abe4005fcdd0f81be57
-*** Element info: {Using=xpath, value=//button[@data-tid='my-places']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy11.isDisplayed(Unknown Source)
-	at com.ag.pages.HomePage.validateMyFavCount(HomePage.java:55)
-	at com.ag.testcases.homePageLogin.validateMyFavsCount(homePageLogin.java:28)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method status="PASS" signature="validateMyFavsCount()[pri:2, instance:com.ag.testcases.homePageLogin@4678c730]" name="validateMyFavsCount" duration-ms="5072" started-at="2020-09-14T22:26:49Z" finished-at="2020-09-14T22:26:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateMyFavsCount -->
-        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.ag.testcases.homePageLogin@4678c730]" name="tearDownMethod" is-config="true" duration-ms="1081" started-at="2020-09-14T20:24:06Z" finished-at="2020-09-14T20:24:07Z">
+        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.ag.testcases.homePageLogin@4678c730]" name="tearDownMethod" is-config="true" duration-ms="1192" started-at="2020-09-14T22:26:54Z" finished-at="2020-09-14T22:26:55Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=validateMyFavsCount status=FAILURE method=homePageLogin.validateMyFavsCount()[pri:2, instance:com.ag.testcases.homePageLogin@4678c730] output={null}]]]>
+                <![CDATA[[TestResult name=validateMyFavsCount status=SUCCESS method=homePageLogin.validateMyFavsCount()[pri:2, instance:com.ag.testcases.homePageLogin@4678c730] output={null}]]]>
               </value>
             </param>
           </params>
@@ -168,7 +99,7 @@ Session ID: 64581ec02e106abe4005fcdd0f81be57
             </line>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method status="PASS" signature="after()[pri:0, instance:com.ag.testcases.homePageLogin@4678c730]" name="after" is-config="true" duration-ms="143" started-at="2020-09-14T20:24:07Z" finished-at="2020-09-14T20:24:07Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:com.ag.testcases.homePageLogin@4678c730]" name="after" is-config="true" duration-ms="137" started-at="2020-09-14T22:26:55Z" finished-at="2020-09-14T22:26:55Z">
           <reporter-output>
             <line>
               <![CDATA[Quitting the browser...]]>
