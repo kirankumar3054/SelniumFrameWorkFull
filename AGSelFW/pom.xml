@@ -8,14 +8,14 @@
 
 	<dependencies>
 
-		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+		<!-- selenium-java -->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
 			<version>3.141.59</version>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+		<!-- org.testng/testng -->
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
@@ -23,14 +23,14 @@
 			<scope>test</scope>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+		<!-- For Excel sheet - org.apache.poi/poi -->
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi</artifactId>
 			<version>3.17</version>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+		<!-- For Excel sheet - org.apache.poi/poi-ooxml -->
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi-ooxml</artifactId>
@@ -38,7 +38,7 @@
 		</dependency>
 
 
-		<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+		<!-- For Reporting - extentreports -->
 		<dependency>
 			<groupId>com.aventstack</groupId>
 			<artifactId>extentreports</artifactId>
@@ -46,4 +46,29 @@
 		</dependency>
 
 	</dependencies>
+
+	<build>
+		
+		<plugins>
+			<!-- For Maven Build - SureFire Plugin -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.0.0-M5</version>
+				
+				<configuration>
+					<suiteXmlFiles>
+						<suiteXmlFile>XMLfiles/testng.xml</suiteXmlFile>
+					</suiteXmlFiles>
+					
+<!-- 					<systemPropertyVariables>
+						<ExecutionBrowser>${browserToBeTested}</ExecutionBrowser>
+						<ExecutionURL>${urlToBeTested}</ExecutionURL>
+					</systemPropertyVariables> -->
+				</configuration>
+			</plugin>
+
+		</plugins>
+	</build>
+
 </project>	

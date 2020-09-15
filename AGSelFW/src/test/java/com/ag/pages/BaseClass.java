@@ -10,6 +10,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Parameters;
 
 import com.ag.utility.BrowserFactory;
 import com.ag.utility.ConfigDataProvider;
@@ -41,11 +42,16 @@ public class BaseClass {
 		Reporter.log("Settingup Excel, Properties & Reporter - Completed", true);
 	}
 	
+	//@Parameters({"browserToBeTested", "urlToBeTested"})
 	@BeforeClass
 	public void before () {
 		
 		Reporter.log("Brining up desired browser with desired launch url...", true);
+//		To Reads browser & url from config.properties file		
 		driver = BrowserFactory.startLargeApp(driver, prop.getBrowser(), prop.getQaUrl());
+		
+//		Below is to read browser & url from Maven System Properties at RUN TIME
+//		driver = BrowserFactory.startLargeApp(driver, browser, url);
 		Reporter.log("Desired Browser ready with desired URL- completed", true);
 	}
 

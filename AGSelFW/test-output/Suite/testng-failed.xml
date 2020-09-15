@@ -5,11 +5,9 @@
     <classes>
       <class name="com.ag.testcases.homePageLogin">
         <methods>
-          <include name="after"/>
-          <include name="tearDownMethod"/>
           <include name="setUpSuite"/>
-          <include name="before"/>
           <include name="loginApp"/>
+          <include name="validateMyFavsCount"/>
         </methods>
       </class> <!-- com.ag.testcases.homePageLogin -->
     </classes>
