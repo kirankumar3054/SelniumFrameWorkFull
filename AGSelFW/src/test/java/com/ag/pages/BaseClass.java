@@ -42,16 +42,16 @@ public class BaseClass {
 		Reporter.log("Settingup Excel, Properties & Reporter - Completed", true);
 	}
 	
-	//@Parameters({"browserToBeTested", "urlToBeTested"})
+	@Parameters({"browserToBeTested", "urlToBeTested"})
 	@BeforeClass
-	public void before () {
+	public void before (String browser, String url) {
 		
 		Reporter.log("Brining up desired browser with desired launch url...", true);
 //		To Reads browser & url from config.properties file		
-		driver = BrowserFactory.startLargeApp(driver, prop.getBrowser(), prop.getQaUrl());
+//		driver = BrowserFactory.startLargeApp(driver, prop.getBrowser(), prop.getQaUrl());
 		
 //		Below is to read browser & url from Maven System Properties at RUN TIME
-//		driver = BrowserFactory.startLargeApp(driver, browser, url);
+		driver = BrowserFactory.startLargeApp(driver, browser, url);
 		Reporter.log("Desired Browser ready with desired URL- completed", true);
 	}
 

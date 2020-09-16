@@ -61,10 +61,10 @@
 						<suiteXmlFile>XMLfiles/testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
 					
-<!-- 					<systemPropertyVariables>
+					<systemPropertyVariables>
 						<ExecutionBrowser>${browserToBeTested}</ExecutionBrowser>
 						<ExecutionURL>${urlToBeTested}</ExecutionURL>
-					</systemPropertyVariables> -->
+					</systemPropertyVariables>
 				</configuration>
 			</plugin>
 
