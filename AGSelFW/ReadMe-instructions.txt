@@ -1,4 +1,17 @@
 
+Features of this Frame Work (Java/Selenium/TestNG)
+==================================================
+1. Extent Reports (Listeners cannot be customized. Hence Extent Reports preferred)
+2. Reporter Log
+3. Automatic ScreenShot capability with Date & Time (on TC fail/pass)
+4. Maven Build (Both from UI & CLI)
+5. Local three browser envs (chrome, firefox & Safari).
+6. SauceLabs connectivity (chrome & ie)
+7. BDD implementation  -- Pending
+8. Visual Testing   -- Pending
+
+
+
 This framework is cable of run scripts local system as well as SauceLabs.  
 And it is configured to take sauce user & access key from local terminal (which are already exported to local like below example:)
 export SAUCE_USERNAME=krudrangi SAUCE_ACCESS_KEY=eaed9e16-e999-4b16-a510-8a57eb740d97
