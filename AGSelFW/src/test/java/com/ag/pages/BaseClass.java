@@ -16,10 +16,12 @@ import com.ag.utility.BrowserFactory;
 import com.ag.utility.ConfigDataProvider;
 import com.ag.utility.ExcelDataProvider;
 import com.ag.utility.Helper;
+import com.applitools.eyes.selenium.Eyes;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+
 
 public class BaseClass {
 	public WebDriver driver;
@@ -27,6 +29,7 @@ public class BaseClass {
 	public ConfigDataProvider prop; 
 	public ExtentReports report;
 	public ExtentTest logger;
+	public Eyes eyes;
 	
 	
 	@BeforeSuite
@@ -40,6 +43,13 @@ public class BaseClass {
 		report = new ExtentReports();
 		report.attachReporter(extent);
 		Reporter.log("Settingup Excel, Properties & Reporter - Completed", true);
+		
+		Reporter.log("Settingup Applitools for Visual testing - make sure export it's Key.", true);
+		Eyes eyes = new Eyes();
+		eyes.setApiKey("DEOpjtCLyNn108Mjk7a0osTYWbqdRRxEjtA2mCfka0gcE110");
+		Reporter.log("Settingup Applitools for Visual testing - Completed.", true);
+		
+		
 	}
 	
 	@Parameters({"browserToBeTested", "urlToBeTested"})

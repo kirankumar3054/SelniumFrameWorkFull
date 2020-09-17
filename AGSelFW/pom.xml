@@ -44,23 +44,30 @@
 			<artifactId>extentreports</artifactId>
 			<version>3.1.5</version>
 		</dependency>
+		<!-- This is the Applitools Selenium Java SDK -->
+		<dependency>
+			<groupId>com.applitools</groupId>
+			<artifactId>eyes-selenium-java3</artifactId>
+			<version>3.178.0</version>
+		</dependency>
+
 
 	</dependencies>
 
 	<build>
-		
+
 		<plugins>
 			<!-- For Maven Build - SureFire Plugin -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>3.0.0-M5</version>
-				
+
 				<configuration>
 					<suiteXmlFiles>
 						<suiteXmlFile>XMLfiles/testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
-					
+
 					<systemPropertyVariables>
 						<ExecutionBrowser>${browserToBeTested}</ExecutionBrowser>
 						<ExecutionURL>${urlToBeTested}</ExecutionURL>
